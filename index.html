@@ -1,115 +1,168 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>رزومه محمد فرهانی</title>
-    <style>
-        body {
-            font-family: "Tahoma", sans-serif;
-            background: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-        .header {
-            background: #222;
-            color: white;
-            padding: 40px;
-            text-align: center;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 35px;
-        }
-        .header p {
-            margin-top: 10px;
-            opacity: .8;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مبل حاجی خوزه</title>
 
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px #bbb;
-        }
+<!-- فونت شیک ایران‌سنس -->
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;500;700&display=swap" rel="stylesheet">
 
-        h2 {
-            margin-top: 0;
-            border-right: 5px solid #444;
-            padding-right: 10px;
-        }
+<style>
+    body {
+        font-family: 'Vazirmatn', sans-serif;
+        background: #f5f5f5;
+        margin: 0;
+        padding: 0;
+        direction: rtl;
+    }
 
-        .skill-box {
-            margin-bottom: 10px;
-        }
-        .skill-title {
-            font-weight: bold;
-        }
-        .bar {
-            width: 100%;
-            background: #ddd;
-            height: 10px;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-        .bar-fill {
-            height: 10px;
-            background: #444;
-        }
+    header {
+        background: #111;
+        color: white;
+        padding: 25px;
+        text-align: center;
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 30px;
-            background: #222;
-            color: white;
-        }
-    </style>
+    .logo-sub {
+        font-size: 14px;
+        opacity: 0.7;
+        margin-top: 5px;
+    }
+
+    .container {
+        width: 95%;
+        margin: auto;
+    }
+
+    .product {
+        background: #fff;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .product:hover {
+        transform: scale(1.02);
+    }
+
+    .product img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .details {
+        display: none;
+        margin-top: 10px;
+        padding: 10px;
+        background: #f0f0f0;
+        border-radius: 8px;
+    }
+
+    .contact-box {
+        margin: 40px 0;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-box a {
+        text-decoration: none;
+        font-size: 20px;
+        margin: 0 10px;
+        font-weight: bold;
+    }
+
+    .contact-box img {
+        width: 35px;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+</style>
+
+<script>
+function toggleDetails(id) {
+    var box = document.getElementById(id);
+    box.style.display = box.style.display === "block" ? "none" : "block";
+}
+</script>
+
 </head>
-
 <body>
 
-    <div class="header">
-        <h1>محمد فرهانی</h1>
-        <p>سایت شخصی و رزومه</p>
+<header>
+    مبل حاجی خوزه
+    <div class="logo-sub">Khoze Furniture | Since 2025</div>
+</header>
+
+<div class="container">
+
+    <!-- محصول 1 -->
+    <div class="product" onclick="toggleDetails('p1')">
+        <img src="https://i.imgur.com/OWfS7v5.jpeg">
+        <h2>مبل مدل Royal</h2>
+        <p>قیمت: ۱۸,۵۰۰,۰۰۰ تومان</p>
+        <div class="details" id="p1">
+            * مشخصات *
+            <br> پارچه مخمل ترک
+            <br> فوم سرد
+            <br> دو سال گارانتی
+            <br><br> توضیحات: مناسب پذیرایی لوکس و مدرن.
+        </div>
     </div>
 
-    <div class="container">
-        <h2>درباره من</h2>
-        <p>
-            سلام! من محمد هستم، علاقه‌مند به طراحی سایت، تکنولوژی و یادگیری مهارت‌های جدید.
-        </p>
-
-        <h2>مهارت‌ها</h2>
-
-        <div class="skill-box">
-            <div class="skill-title">HTML / CSS</div>
-            <div class="bar"><div class="bar-fill" style="width: 80%;"></div></div>
+    <!-- محصول 2 -->
+    <div class="product" onclick="toggleDetails('p2')">
+        <img src="https://i.imgur.com/1dEn5PG.jpeg">
+        <h2>مبل مدل Classic</h2>
+        <p>قیمت: ۲۲,۰۰۰,۰۰۰ تومان</p>
+        <div class="details" id="p2">
+            * مشخصات *
+            <br> چوب راش گرجستان
+            <br> رنگ پلی‌اورتان
+            <br> نشیمن نرم
+            <br><br> توضیحات: مناسب خانه‌های کلاسیک و لاکچری.
         </div>
-
-        <div class="skill-box">
-            <div class="skill-title">طراحی سایت</div>
-            <div class="bar"><div class="bar-fill" style="width: 70%;"></div></div>
-        </div>
-
-        <div class="skill-box">
-            <div class="skill-title">ویرایش و مدیریت محتوا</div>
-            <div class="bar"><div class="bar-fill" style="width: 90%;"></div></div>
-        </div>
-
-        <h2>تماس با من</h2>
-        <p>
-            ایمیل: example@gmail.com  
-            <br>
-            اینستاگرام: @username  
-        </p>
     </div>
 
-    <footer>
-        © 2025 محمد فرهانی — تمامی حقوق محفوظ است.
-    </footer>
+    <!-- محصول 3 -->
+    <div class="product" onclick="toggleDetails('p3')">
+        <img src="https://i.imgur.com/tTV6TJm.jpeg">
+        <h2>مبل مدل Modern</h2>
+        <p>قیمت: ۱۵,۵۰۰,۰۰۰ تومان</p>
+        <div class="details" id="p3">
+            * مشخصات *
+            <br> پایه استیل طلایی
+            <br> پارچه ضدلک
+            <br> یک سال ضمانت
+            <br><br> توضیحات: کاملاً سبک مدرن.
+        </div>
+    </div>
+
+</div>
+
+<!-- اطلاعات تماس -->
+<div class="contact-box">
+    <h2>راه‌های ارتباطی</h2>
+
+    <p>سفارش: <b>۰۹۰۱۴۶۲۵۴۶۱</b></p>
+
+    <a href="https://instagram.com/khoze_me" target="_blank">
+        <img src="https://i.imgur.com/VcJf8V8.png"> اینستاگرام
+    </a>
+
+    <a href="https://t.me/khoze_me" target="_blank">
+        <img src="https://i.imgur.com/PiQ7V1b.png"> تلگرام
+    </a>
+</div>
 
 </body>
 </html>
